@@ -3,19 +3,19 @@
   padding: 0;
 }
 
-#vihrea {
+.vihrea {
   color: #004921;
 }
 
-#oranssi {
+.oranssi {
   color: #f88d22;
 }
 
-#pinkki {
+.pinkki {
   color: #ffbba6;
 }
 
-#valkoinen {
+.valkoinen {
   color: #f5e1d1;
 }
 
@@ -36,7 +36,6 @@ main {
 nav {
   background-color: #004921;
   margin: auto;
-  padding: auto;
   max-width: 90%;
   height: 4rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
