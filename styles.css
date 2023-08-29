@@ -59,6 +59,9 @@ nav a:hover {
   color: #190f30;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+nav a:active {
+  background-color: #fccca5;
+}
 .chili {
   width: 30%;
   max-width: 250px;
