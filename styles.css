@@ -4,30 +4,21 @@
   box-sizing: border-box;
 }
 
-.vihrea {
-  color: #004921;
-}
-
-.oranssi {
-  color: #f88d22;
-}
-
-.pinkki {
-  color: #ffbba6;
-}
-
-.valkoinen {
-  color: #f5e1d1;
+:root {
+  --vihrea: #013317;
+  --valkoinen: #f5e1d1;
+  --pinkki: #ffbba6;
+  --oranssi: #e88522;
 }
 
 body {
-  background-color: #f5e1d1;
+  background-color: var(--valkoinen);
   margin: auto;
   height: 100%;
   font-family: "DM Serif Display", serif;
 }
 main {
-  background-color: #004921;
+  background-color: var(--vihrea);
   margin: 200px auto;
   width: 90%;
   position: relative;
@@ -35,7 +26,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 nav {
-  background-color: #004921;
+  background-color: var(--vihrea);
   margin: auto;
   max-width: 90%;
   height: 6rem;
@@ -44,23 +35,24 @@ nav {
   padding: 1.5rem;
 }
 nav a {
-  background-color: #f5e1d1;
+  background-color: var(--valkoinen);
+  color: var(--vihrea);
   float: right;
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  transition: all 0.3s;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   margin: 5px;
   border-radius: 20px;
   letter-spacing: 1px;
   font-size: larger;
 }
 nav a:hover {
-  color: #190f30;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+  color: var(--valkoinen);
+  background-color: var(--vihrea);
+  box-shadow: inset 100px 0 0 0 var(--oranssi);}
 nav a:active {
-  background-color: #fccca5;
+  background-color: var(--valkoinen);
 }
 .chili {
   width: 200px;
@@ -90,15 +82,18 @@ nav a:active {
 }
 
 h1 {
+  color: var(--pinkki);
   float: left;
   padding-left: 1rem;
   font-size: 40px;
-  text-shadow: 2px 2px 5px #f88d22;
+  text-shadow: 2px 2px 5px var(--oranssi);
 }
 h2 {
   margin: 0 10px 10px 0;
+  color: var(--valkoinen);
 }
 h3 {
+  color: var(--valkoinen);
   margin: 0 10px 10px 0;
 }
 footer {
@@ -106,4 +101,7 @@ footer {
   padding: 2rem;
   bottom: 0;
   width: 100%;
+}
+p{
+  color: var(--valkoinen);
 }
