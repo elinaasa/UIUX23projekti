@@ -50,9 +50,9 @@ nav a {
 nav a:hover {
   color: var(--valkoinen);
   background-color: var(--vihrea);
-  box-shadow: inset 100px 0 0 0 var(--oranssi);}
+  box-shadow: inset 100px 0 0 0 var(--vihrea);}
 nav a:active {
-  background-color: var(--valkoinen);
+  color: var(--oranssi);
 }
 .chili {
   width: 200px;
