@@ -41,22 +41,23 @@ nav {
   padding: 1.5rem;
 }
 nav a {
+  border-radius: 20px;
+  letter-spacing: 1px;
   background-color: var(--valkoinen);
   color: var(--vihrea);
   float: right;
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin: 5px;
-  border-radius: 20px;
-  letter-spacing: 1px;
   font-size: large;
 }
 nav a:hover {
   color: var(--valkoinen);
   background-color: var(--vihrea);
-  box-shadow: inset 100px 0 0 0 var(--vihrea);}
+  /* box-shadow: inset 200px 0 0 0 var(--vihrea); */
+}
 nav a:active {
   color: var(--oranssi);
 }
@@ -109,7 +110,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
-p{
+p {
   color: var(--valkoinen);
 }
 button {
