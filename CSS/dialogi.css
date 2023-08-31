@@ -35,9 +35,9 @@ dialog {
   
 }
 
-.myForm input{
+/* .myForm input{
 
-}
+} */
 
 .myForm input:required{
   background-color: crimson;
