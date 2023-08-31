@@ -8,7 +8,6 @@ const elements = dialog.querySelectorAll(
 const firstElement = elements[0];
 const lastElement = elements[elements.length - 1];
 
-/*
 const trapFocus = (e) => {
   if (e.key === "Tab") {
     const tabForwards = !e.shiftKey && document.activeElement === lastElement;
@@ -25,17 +24,16 @@ const trapFocus = (e) => {
     }
   }
 };
-*/
 
 const openDialog = () => {
   dialog.showModal();
-  // dialog.addEventListener("keydown", trapFocus);
+  dialog.addEventListener("keydown", trapFocus);
 };
 
 const closeDialog = (e) => {
   e.preventDefault();
   dialog.close();
-  // dialog.removeEventListener("keydown", trapFocus);
+  dialog.removeEventListener("keydown", trapFocus);
   openDialogBtn.focus();
 };
 

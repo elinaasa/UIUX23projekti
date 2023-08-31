@@ -21,8 +21,8 @@
       <a href="#">Etusivu</a>
       <a href="#">Ruokalista</a>
       <a href="#">Yhteystiedot</a>
+      <a id="open_dialog">Open Dialog</a>
     </nav>
-    <button id="open_dialog">Open Dialog</button>
     <main>
       <img src="../img/coffeepng.png" alt="coffee" class="chili clearfix" />
       <div class="info clearfix">
@@ -54,15 +54,44 @@
         src="https://native-dialog.surge.sh/location-service.svg"
         alt="Illustration of Location Services"
       />
-      <h2 id="dialog_title" class="h2">Use location services?</h2>
+      <h2 id="dialog_title" class="h2">Rekisteröidy käyttäjäksi</h2>
       <p id="dialog_description">
-        In order to give directional instructions, we kindly ask you to turn on
-        the location services.
+        Tarvitsemme hieman lisätietoja, ole hyvä ja täytä kentät jatkaaksesi.
       </p>
       <div class="flex flex-space-between">
         <button id="close_dialog">Close</button>
         <button id="confirm_dialog" class="cta">Confirm</button>
       </div>
+      <form method="get" class="myForm">
+        <label for="username">Syötä nimesi (väh 3 merkkiä): </label>
+          <input
+            type="text"
+            name="username"
+            autocomplete="name"
+            id="nimikenttä"
+            placeholder="Nimi tähän"
+            minlength="3"
+          />
+        </label>
+        <label for="username">Syötä sähköposti: </label>
+          <input
+            type="text"
+            name="email"
+            autocomplete="email"
+            id="sähköposti"
+            placeholder="Sähköposti tähän"
+            required
+          />
+        </label>
+        <label for="username">Syötä salasana: </label>
+        <input
+          type="password"
+          name="password"
+          id="salasanakenttä"
+          placeholder="Salasana tähän"
+          required
+        />
+      </form>
     </dialog>
   </body>
 </html>
