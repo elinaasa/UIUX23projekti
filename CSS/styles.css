@@ -23,6 +23,7 @@ body {
   height: 100%;
   font-family: "DM Serif Display", serif;
 }
+
 main {
   background-color: var(--vihrea);
   margin: 200px auto;
@@ -31,6 +32,7 @@ main {
   height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 nav {
   background-color: var(--vihrea);
   margin: auto;
@@ -40,6 +42,7 @@ nav {
   text-align: center;
   padding: 1.5rem;
 }
+
 nav a {
   border-radius: 20px;
   letter-spacing: 1px;
@@ -53,11 +56,13 @@ nav a {
   margin: 5px;
   font-size: large;
 }
+
 nav a:hover {
   color: var(--valkoinen);
   background-color: var(--vihrea);
   /* box-shadow: inset 200px 0 0 0 var(--vihrea); */
 }
+
 nav a:active {
   color: var(--oranssi);
 }
@@ -69,10 +74,12 @@ nav a:active {
   right: 0;
   top: -100px;
 }
+
 .info {
   padding: 2rem;
   overflow: auto;
 }
+
 .infoimg {
   float: left;
   width: 40%;
@@ -83,6 +90,7 @@ nav a:active {
   overflow: auto;
   margin: 0px 20px 10px 0;
 }
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -96,23 +104,28 @@ h1 {
   font-size: 40px;
   text-shadow: 2px 2px 5px var(--oranssi);
 }
+
 h2 {
   margin: 0 10px 10px 0;
   color: var(--valkoinen);
 }
+
 h3 {
   color: var(--valkoinen);
   margin: 0 10px 10px 0;
 }
+
 footer {
   text-align: center;
   padding: 2rem;
   bottom: 0;
   width: 100%;
 }
+
 p {
   color: var(--valkoinen);
 }
+
 button {
   display: block;
   margin-top: 2rem;
@@ -142,32 +155,7 @@ button.cta {
 button.cta:focus {
   box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.2rem var(--cta-color);
 }
+
 #open_dialog {
   margin: 0 auto;
-}
-
-dialog {
-  border: none !important;
-  border-radius: calc(5px * var(--ratio));
-  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  padding: 1.6rem;
-  max-width: 400px;
-}
-
-dialog img {
-  display: block;
-  max-width: 75%;
-  margin: 1rem 0 auto 2rem;
-}
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex.flex-space-between {
-  justify-content: space-between;
-}
-
-.flex button {
-  margin: 8px auto;
 }

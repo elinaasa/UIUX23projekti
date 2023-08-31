@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../CSS/styles.css" rel="stylesheet" />
+    <link href="../CSS/dialogi.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="../JS/dialogi.js" defer></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
       rel="stylesheet"
@@ -19,27 +22,7 @@
       <a href="#">Ruokalista</a>
       <a href="#">Yhteystiedot</a>
     </nav>
-    <!--<button id="open_dialog">Open Dialog</button>
-
-    <dialog
-      open
-      aria-labelledby="dialog_title"
-      aria-describedby="dialog_description"
-    >
-      <img
-        src="https://native-dialog.surge.sh/location-service.svg"
-        alt="Illustration of Location Services"
-      />
-      <h2 id="dialog_title" class="h2">Use location services?</h2>
-      <p id="dialog_description">
-        In order to give directional instructions, we kindly ask you to turn on
-        the location services.
-      </p>
-      <div class="flex flex-space-between">
-        <button id="close_dialog">Close</button>
-        <button id="confirm_dialog" class="cta">Confirm</button>
-      </div>
-    </dialog>-->
+    <button id="open_dialog">Open Dialog</button>
     <main>
       <img src="../img/coffeepng.png" alt="coffee" class="chili clearfix" />
       <div class="info clearfix">
@@ -62,5 +45,24 @@
       </div>
     </main>
     <footer>Copyright</footer>
+    <!--Tänne dialogit-->
+    <dialog
+      aria-labelledby="dialog_title"
+      aria-describedby="dialog_description"
+    >
+      <img
+        src="https://native-dialog.surge.sh/location-service.svg"
+        alt="Illustration of Location Services"
+      />
+      <h2 id="dialog_title" class="h2">Use location services?</h2>
+      <p id="dialog_description">
+        In order to give directional instructions, we kindly ask you to turn on
+        the location services.
+      </p>
+      <div class="flex flex-space-between">
+        <button id="close_dialog">Close</button>
+        <button id="confirm_dialog" class="cta">Confirm</button>
+      </div>
+    </dialog>
   </body>
 </html>
