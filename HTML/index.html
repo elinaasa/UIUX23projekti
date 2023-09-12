@@ -7,8 +7,11 @@
     <link href="../CSS/dialogi.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kanit&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <script src="../JS/dialogi.js" defer></script>
-
+    <script src="../JS/hamburger.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
       rel="stylesheet"
@@ -18,11 +21,18 @@
   <body>
     <nav class="clearfix">
       <h1 class="">Kahvila</h1>
-      <a href="#">Etusivu</a>
-      <a href="#">Ruokalista</a>
-      <a href="#">Yhteystiedot</a>
-      <a id="open_dialog">Open Dialog</a>
+      <div class="menu">
+        <a href="#">Etusivu</a>
+        <a href="#">Ruokalista</a>
+        <a href="#">Yhteystiedot</a>
+        <a id="open_dialog">Open Dialog</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
+    <div class="hero-image">
+    </div>
     <main>
       <img src="../img/coffeepng.png" alt="coffee" class="chili clearfix" />
       <div class="info clearfix">

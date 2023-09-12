@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -15,22 +14,52 @@
   --dark-color-bg: rgb(55, 65, 81);
   --grey-color: rgb(107, 114, 128);
   --leading: 0.025em;
+
+  --celadon: hsla(100, 29%, 70%, 1);
+  --pale-dogwood: hsla(16, 72%, 89%, 1);
+  --alabaster: hsla(42, 25%, 90%, 1);
+  --old-gold: hsla(57, 77%, 41%, 1);
+  --avocado: hsla(71, 89%, 26%, 1);
+  --moss-green: hsla(50, 16%, 51%, 1);
+  --jonquil: hsla(49, 100%, 48%, 1);
+  --sunglow: hsla(43, 100%, 62%, 1);
+  --citrine: hsla(57, 93%, 44%, 1);
+  --sage: #cfd49eff;
+  --buff: #eeba8aff;
+  --brown: #331c08;
+}
+
+.icon {
+  display: none;
 }
 
 body {
-  background-color: var(--valkoinen);
+  background-color: var(--sage);
   margin: auto;
   height: 100%;
   font-family: "DM Serif Display", serif;
+  font-family: "Kanit", sans-serif;
 }
 
-body:has(dialog[open]){
+body:has(dialog[open]) {
   overflow-y: hidden;
+}
+.hero-image {
+  background-image: url(../img/hero1.jpg);
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
 
 main {
-  background-color: var(--vihrea);
-  margin: 200px auto;
+  background-color: var(--alabaster);
+  margin: auto;
   width: 90%;
   position: relative;
   height: 100%;
@@ -38,32 +67,31 @@ main {
 }
 
 nav {
-  background-color: var(--vihrea);
+  background-color: var(--alabaster);
   margin: auto;
   max-width: 90%;
-  height: 6rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   padding: 1.5rem;
 }
 
-nav a{
+nav a {
   border-radius: 20px;
   letter-spacing: 1px;
-  background-color: var(--valkoinen);
-  color: var(--vihrea);
+  background-color: var(--alabaster);
+  color: var(--avocado);
   float: right;
   text-align: center;
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin: 5px;
-  font-size:small;
+  font-size: small;
 }
 
 nav a:hover {
-  color: var(--valkoinen);
-  background-color: var(--vihrea);
+  color: var(--alabaster);
+  background-color: var(--avocado);
   /* box-shadow: inset 200px 0 0 0 var(--vihrea); */
 }
 
@@ -79,7 +107,7 @@ nav a:active {
   top: -100px;
   border-radius: 20px;
 }
-.fl{
+.fl {
   float: none;
 }
 
@@ -99,33 +127,34 @@ nav a:active {
   margin: 0px 20px 10px 0;
   object-fit: cover;
 }
-@media only screen and (max-width: 700px;){
-  .infoimg{
-    float: none;
-    max-width: 100px;
-  }
-}
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-h1 {
-  color: var(--pinkki);
+nav h1 {
+  color: var(--brown);
+  font-weight: bold;
+
+  font-family: Romana, Georgia, Times New Roman, serif;
   float: left;
   padding-left: 1rem;
   font-size: 40px;
-  text-shadow: 2px 2px 5px var(--oranssi);
+  text-transform: uppercase;
 }
 
 h2 {
+  font-family: Romana, Georgia, Times New Roman, serif;
+  font-weight: bold;
   margin: 0 10px 10px 0;
-  color: var(--valkoinen);
+  color: var(--brown);
 }
 
 h3 {
-  color: var(--valkoinen);
+  font-family: Romana, Georgia, Times New Roman, serif;
+  font-weight: bold;
+  color: var(--brown);
   margin: 0 10px 10px 0;
 }
 
@@ -137,10 +166,10 @@ footer {
 }
 
 p {
-  color: var(--valkoinen);
+  color: var(--brown);
 }
 
-/* button {
+button {
   display: block;
   margin-top: 2rem;
   width: calc(44px * var(--ratio));
@@ -153,7 +182,7 @@ p {
   background-color: var(--light-color-bg);
   font-size: large;
   font-weight: 700;
-} */
+}
 
 button:focus {
   outline: none;
@@ -172,4 +201,36 @@ button.cta:focus {
 
 #open_dialog {
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .infoimg {
+    float: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    float: none; /* Remove float for smaller screens */
+    margin: 5px 0; /* Add vertical margin between links */
+  }
+  .menu {
+    display: none;
+  }
+
+  nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+  .chili {
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+  }
 }
