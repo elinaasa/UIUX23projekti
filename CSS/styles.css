@@ -46,30 +46,52 @@ body:has(dialog[open]) {
 }
 .hero-image {
   background-image: url(../img/hero1.jpg);
-  height: 400px;
-  width: 100%;
+  height: 300px;
+  width: 90%;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
-  justify-content: center;
-  margin: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.lounas {
+.juomat {
   background-color: var(--alabaster);
-  height: 400px;
-  width: 80%;
-  display: grid;
-  justify-items: center;
-  margin: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  width: 40%;
+  height: 90%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+.juomat img {
+  height: 200px;
+  max-width: 100%;
+  height: auto;
+  grid-row: 1 / span 2;
+  border-radius: 30px;
+}
+
+.juomat h2 {
+  margin: auto;
+}
+
+.juomat ul {
+  margin: auto;
+}
 main {
   background-color: var(--alabaster);
   margin: auto;
+  margin-top: 2rem;
   width: 90%;
   position: relative;
   height: 100%;
