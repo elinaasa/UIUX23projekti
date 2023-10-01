@@ -3,30 +3,27 @@
   padding: 0;
 }
 
-:root {
-  --vihrea: #013317;
-  --valkoinen: #f5e1d1;
-  --pinkki: #ffbba6;
-  --oranssi: #e88522;
-  --ratio: 3.74;
-  --cta-color: rgb(0, 102, 254);
-  --light-color-bg: rgb(238, 241, 247);
-  --dark-color-bg: rgb(55, 65, 81);
-  --grey-color: rgb(107, 114, 128);
-  --leading: 0.025em;
+@font-face {
+  font-family: "Jost";
+  src: url("../Fonts/Jost-VariableFont_wght.ttf");
+}
 
-  --celadon: hsla(100, 29%, 70%, 1);
-  --pale-dogwood: hsla(16, 72%, 89%, 1);
-  --alabaster: hsla(42, 25%, 90%, 1);
-  --old-gold: hsla(57, 77%, 41%, 1);
-  --avocado: hsla(71, 89%, 26%, 1);
-  --moss-green: hsla(50, 16%, 51%, 1);
-  --jonquil: hsla(49, 100%, 48%, 1);
-  --sunglow: hsla(43, 100%, 62%, 1);
-  --citrine: hsla(57, 93%, 44%, 1);
-  --sage: #cfd49eff;
-  --buff: #eeba8aff;
-  --brown: #331c08;
+:root {
+  --citron: #d5d287ff;
+  --floral-white: #fef6ebff;
+  --caribbean-current: #166665ff;
+  --verdigris: #6ab7b1ff;
+  --ebony: #5b684aff;
+  --reseda-green: #65795dff;
+  --sage: rgb(158, 170, 135);
+  --vanilla: #d4d198ff;
+  --snow: #fff6f7ff;
+  --peach-yellow: #f4d99dff;
+  --hunyadi-yellow: #f2b359ff;
+  --coral: #e87e4cff;
+  --tea-rose-red: rgb(252, 202, 201);
+  --ut-orange: #fb8200ff;
+  --xanthous: #f1bb41ff;
 }
 
 .icon {
@@ -34,11 +31,12 @@
 }
 
 body {
-  background-color: var(--sage);
+  background-color: var(--floral-white);
   margin: auto;
   height: 100%;
-  font-family: "DM Serif Display", serif;
-  font-family: "Kanit", sans-serif;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 body:has(dialog[open]) {
@@ -57,16 +55,15 @@ body:has(dialog[open]) {
 }
 
 .juomat {
-  background-color: var(--alabaster);
   margin: auto;
   margin-top: 2rem;
-  width: 40%;
+  width: 60%;
   height: 90%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -82,14 +79,27 @@ body:has(dialog[open]) {
 }
 
 .juomat h2 {
-  margin: auto;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+  align-self: center;
+  color: var(--ut-orange);
+  font-family: "Lilita One", cursive;
+  font-size: 3rem;
+  margin: 0.5rem 1rem 1rem; /* Adjust the margin as needed */
 }
 
 .juomat ul {
   margin: auto;
+  padding: 0;
+  overflow: auto;
+}
+
+.juomat li:hover {
+  cursor: pointer;
+  color: var(--ut-orange);
 }
 main {
-  background-color: var(--alabaster);
+  background-color: var(--floral-white);
   margin: auto;
   margin-top: 2rem;
   width: 90%;
@@ -99,7 +109,7 @@ main {
 }
 
 nav {
-  background-color: var(--alabaster);
+  background-color: var(--sage);
   margin: auto;
   max-width: 90%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -110,20 +120,18 @@ nav {
 nav a {
   border-radius: 20px;
   letter-spacing: 1px;
-  background-color: var(--alabaster);
-  color: var(--avocado);
+  background-color: var(--peach-yellow);
+  color: var(--reseda-green);
   float: right;
   text-align: center;
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin: 5px;
-  font-size: small;
 }
 
 nav a:hover {
-  color: var(--alabaster);
-  background-color: var(--avocado);
+  color: var(--xanthous);
   /* box-shadow: inset 200px 0 0 0 var(--vihrea); */
 }
 
@@ -166,27 +174,23 @@ nav a:active {
 }
 
 nav h1 {
-  color: var(--brown);
-  font-weight: bold;
-
-  font-family: Romana, Georgia, Times New Roman, serif;
+  color: var(--ebony);
   float: left;
+  font-family: "Lilita One", cursive;
   padding-left: 1rem;
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 4rem;
 }
 
 h2 {
-  font-family: Romana, Georgia, Times New Roman, serif;
-  font-weight: bold;
   margin: 0 10px 10px 0;
-  color: var(--brown);
+  color: var(--ut-orange);
+  font-family: "Lilita One", cursive;
+  font-size: 3rem;
 }
 
 h3 {
-  font-family: Romana, Georgia, Times New Roman, serif;
-  font-weight: bold;
-  color: var(--brown);
+  color: var(--xanthous);
+  font-family: "Lilita One", cursive;
   margin: 0 10px 10px 0;
 }
 
