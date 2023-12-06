@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../CSS/styles.css" rel="stylesheet" />
-    <link href="../CSS/dialogi.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kahvilasivusto, joka on tehty koulua varten.">
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link href="../CSS/dialogi.css" rel="stylesheet">
     <script src="../JS/dialogi.js" defer></script>
     <script src="../JS/hamburger.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    >
     <title>Document</title>
   </head>
   <body>
@@ -25,23 +28,22 @@
         <i class="fa fa-bars"></i>
       </a>
     </nav>
-    <div class="hero-image">
-    </div>
+    <div class="hero-image"></div>
     <section class="juomat">
-      <img src="../img/smoothiet.jpg" alt="juomat"/>
+      <img src="../img/smoothiet.jpg" alt="juomat">
       <h2>Juomat</h2>
       <ul>
         <li>Banaanismoothie</li>
         <li>Trooppinen mangosmoothie</li>
         <li>Vesimelonismoothie</li>
-        <li>Mustikka-lehtikaali-smoothie </li>
+        <li>Mustikka-lehtikaali-smoothie</li>
         <li>Mangosmoothie</li>
         <li>Vihreä päärynäsmoothie</li>
         <li>Veriappelsiini-mansikkasmoothie</li>
       </ul>
     </section>
     <main>
-      <img src="../img/coffeepng.png" alt="coffee" class="chili clearfix" />
+      <img src="../img/coffeepng.png" alt="coffee" class="chili clearfix">
       <div class="info clearfix">
         <img
           src="https://picsum.photos/300/200"
@@ -70,7 +72,7 @@
       <img
         src="https://native-dialog.surge.sh/location-service.svg"
         alt="Illustration of Location Services"
-      />
+      >
       <h2 id="dialog_title" class="h2">Rekisteröidy käyttäjäksi</h2>
       <p id="dialog_description">
         Tarvitsemme hieman lisätietoja, ole hyvä ja täytä kentät jatkaaksesi.
@@ -81,33 +83,31 @@
       </div>
       <form method="get" class="myForm">
         <label for="username">Syötä nimesi (väh 3 merkkiä): </label>
-          <input
-            type="text"
-            name="username"
-            autocomplete="name"
-            id="nimikenttä"
-            placeholder="Nimi tähän"
-            minlength="3"
-          />
-        </label>
+        <input
+          id="nimi"
+          type="text"
+          name="username"
+          autocomplete="name"
+          placeholder="Nimi tähän"
+          minlength="3"
+        >
         <label for="username">Syötä sähköposti: </label>
-          <input
-            type="text"
-            name="email"
-            autocomplete="email"
-            id="sähköposti"
-            placeholder="Sähköposti tähän"
-            required
-          />
-        </label>
+        <input
+          id="sähköposti"
+          type="text"
+          name="email"
+          autocomplete="email"
+          placeholder="Sähköposti tähän"
+          required
+        >
         <label for="username">Syötä salasana: </label>
         <input
+          id="salasana"
           type="password"
           name="password"
-          id="salasanakenttä"
           placeholder="Salasana tähän"
           required
-        />
+        >
       </form>
     </dialog>
   </body>

@@ -6,24 +6,18 @@
 @font-face {
   font-family: "Jost";
   src: url("../Fonts/Jost-VariableFont_wght.ttf");
+  font-display: swap;
 }
 
 :root {
-  --citron: #d5d287ff;
   --floral-white: #fef6ebff;
-  --caribbean-current: #166665ff;
-  --verdigris: #6ab7b1ff;
-  --ebony: #5b684aff;
-  --reseda-green: #65795dff;
-  --sage: rgb(158, 170, 135);
-  --vanilla: #d4d198ff;
-  --snow: #fff6f7ff;
-  --peach-yellow: #f4d99dff;
+  --ebony: #5d684e;
+  --sage: rgb(186, 202, 164);
   --hunyadi-yellow: #f2b359ff;
   --coral: #e87e4cff;
   --tea-rose-red: rgb(252, 202, 201);
-  --ut-orange: #fb8200ff;
-  --xanthous: #f1bb41ff;
+  --ut-orange: rgb(167, 88, 4);
+
 }
 
 .icon {
@@ -39,9 +33,6 @@ body {
   font-size: 1.5rem;
 }
 
-body:has(dialog[open]) {
-  overflow-y: hidden;
-}
 .hero-image {
   background-image: url(../img/hero1.jpg);
   height: 300px;
@@ -120,8 +111,8 @@ nav {
 nav a {
   border-radius: 20px;
   letter-spacing: 1px;
-  background-color: var(--peach-yellow);
-  color: var(--reseda-green);
+  background-color: var(--ebony);
+  color: var(--sage);
   float: right;
   text-align: center;
   text-decoration: none;
@@ -189,7 +180,7 @@ h2 {
 }
 
 h3 {
-  color: var(--xanthous);
+  color: var(--ebony);
   font-family: "Lilita One", cursive;
   margin: 0 10px 10px 0;
 }
@@ -212,7 +203,6 @@ button {
   height: 44px;
   border-radius: calc(3px * var(--ratio));
   border: none;
-  letter-spacing: ccalc(3 * var(--leading, 0.025em));
   font-family: inherit;
   color: var(--grey-color);
   background-color: var(--light-color-bg);
